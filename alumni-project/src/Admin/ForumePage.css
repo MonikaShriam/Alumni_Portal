@@ -1,0 +1,147 @@
+.forum-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.forum-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.new-post {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.new-post h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.new-post input,
+.new-post textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.new-post button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-post button:hover {
+  background-color: #0056b3;
+}
+
+.forum-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.forum-filters select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.thread-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #007bff;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.thread-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thread-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.category-badge {
+  background-color: #e0f0ff;
+  color: #007bff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.thread-content {
+  margin: 10px 0;
+  color: #555;
+}
+
+.thread-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.metrics span,
+.metrics button {
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  color: #555;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.no-results {
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}

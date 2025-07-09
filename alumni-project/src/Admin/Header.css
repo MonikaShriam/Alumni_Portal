@@ -1,0 +1,187 @@
+/* ======= HEADER WRAPPER ======= */
+.header {
+  position: fixed;
+  top: 10px;
+  height: 70px;
+  border-radius: 16px;
+  background: linear-gradient(to left, #0ea5e9, #2563eb, #3a60c9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+  transition: left 0.3s ease, right 0.3s ease, width 0.3s ease;
+}
+
+/* Header when sidebar is collapsed */
+.header-expanded {
+  left: 80px;   /* 70px collapsed + 10px gap */
+  right: 20px;  /* space from right */
+}
+
+/* Header when sidebar is full */
+.header-shifted {
+  left: 250px;  /* 240px sidebar + 10px gap */
+  right: 20px;
+}
+
+/* .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 70px;
+   background: linear-gradient(to left, #0ea5e9, #2563eb, #3a60c9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: white;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 12px 12px;
+} */
+
+
+/* ======= LOGO ======= */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ======= CENTER: SEARCH ======= */
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  max-width: 380px;
+  width: 100%;
+}
+
+.search-icon {
+  font-size: 1rem;
+  margin-right: 8px;
+  color: #fff;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* ======= RIGHT SECTION (ICONS + PROFILE) ======= */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  color: #fff;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #f0f9ff;
+}
+
+/* ======= PROFILE SECTION ======= */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-section:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.profile-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ======= DROPDOWN PROFILE POPUP ======= */
+.profile-popup {
+  position: absolute;
+  top: 80px;
+  right: 24px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  padding: 16px;
+  min-width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  animation: fadeIn 0.25s ease;
+}
+
+.profile-popup p {
+  margin: 0;
+  padding: 4px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.profile-popup .btn-view-profile {
+  margin-top: 12px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-popup .btn-view-profile:hover {
+  background-color: #1e40af;
+}
+
+/* ======= ANIMATION ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.icon.clickable {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.icon.clickable:hover {
+  color: #0d6efd;
+}

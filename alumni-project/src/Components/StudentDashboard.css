@@ -1,0 +1,905 @@
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(to bottom right, #ecf4fb, #dceefb);*/
+  background: linear-gradient(to right top, #dfe9f3, #ffffff);
+ font-family: 'Segoe UI', sans-serif;
+  color: #1a1a2e;
+}
+
+/* === Frosted Glass Navbar === */
+.navbar-glass {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Typography */
+h4, h6 {
+  color: #1e293b;
+}
+
+.MuiTypography-root {
+  color: #334155;
+}
+
+/* QuickStats Cards */
+.MuiPaper-root {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.MuiPaper-root:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Stats Preview List */
+.MuiTypography-body2 {
+  font-size: 14px;
+  color: #64748b !important;
+}
+
+/* Bar Chart */
+.recharts-wrapper {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+/* Recent Updates Card */
+.MuiCard-root {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px !important;
+  margin-top: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+/* List Hover */
+.MuiListItem-root {
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.MuiListItem-root:hover {
+  background-color: #e0f2fe;
+}
+
+/* Avatar in updates */
+.MuiAvatar-root {
+  background-color: #bae6fd !important;
+  color: #0284c7;
+}
+
+/* Navigation Links */
+.nav-link {
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link:hover {
+  transform: scale(1.07);
+  background-color: #e3f2fd;
+  color: #1976d2;
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.2);
+}
+
+.nav-link .MuiTypography-root {
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* Dialog */
+.MuiDialog-paper {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDialogTitle-root {
+  color: #1e3a8a;
+  font-weight: 600;
+  background: linear-gradient(90deg, #bae6fd, #e0f2fe);
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.MuiDialogContent-root {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+.MuiDialogContent-root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb {
+  background-color: #90cdf4;
+  border-radius: 10px;
+}
+
+
+/*======InternshipPlacementPortal.css======= */
+
+.portal-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #e1f5fe);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.portal-container h1 {
+  color: #01579b;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.section-card {
+  background: #ffffff;
+  border: 1px solid #b3e5fc;
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.section-card .icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: #0288d1;
+}
+
+.section-card h2 {
+  font-size: 1.4rem;
+  color: #0277bd;
+  margin-bottom: 0.5rem;
+}
+
+.section-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.section-card button {
+  background-color: #0288d1;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.section-card button:hover {
+  background-color: #0277bd;
+}
+
+
+
+/*===== Events.css==== */
+
+.events-page {
+  padding: 20px;
+  background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+.event-card {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.event-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.event-content {
+  padding: 16px;
+  position: relative;
+}
+
+.event-chip {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+button {
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+/*======StudentProfile.css====== */
+
+.student-profile-container {
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.student-avatar {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 12px rgba(25, 118, 210, 0.5);
+}
+
+.profile-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.profile-value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .student-profile-container {
+    padding: 20px;
+  }
+
+  .student-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-label {
+    font-size: 0.85rem;
+  }
+
+  .profile-value {
+    font-size: 0.95rem;
+  }
+}
+
+
+/*=====Mentorship.css=====*/
+
+.form-card, .mentor-list-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(to top right, #e3f2fd, #f1f8e9);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.mentor-list-card .MuiListItem-root {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.mentor-list-card .MuiListItem-root:hover {
+  box-shadow: 0 8px 16px rgba(25, 118, 210, 0.12);
+}
+
+.MuiTypography-h6 {
+  font-weight: 600;
+  color: #1976d2;
+}
+
+button[type="submit"] {
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 10px;
+  background-color: #1976d2;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #115293;
+}
+
+.MuiTextField-root label {
+  color: #555;
+}
+
+.MuiTextField-root input,
+.MuiTextField-root textarea {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+
+/*=====Forum.css====== */
+
+.forum-page {
+  padding: 20px;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.forum-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.post-card {
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.MuiTypography-h4 {
+  font-weight: 700;
+  color: #1976d2;
+}
+
+button, .MuiButton-containedPrimary {
+  background-color: #1976d2 !important;
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+button:hover, .MuiButton-containedPrimary:hover {
+  background-color: #115293 !important;
+}
+
+
+
+/*======Settings.css=====*/
+
+
+.student-settings-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.student-settings-title {
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.student-settings-form {
+  background-color: #f9f9f9;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.student-settings-form .MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.student-settings-form .MuiButton-containedPrimary {
+  background-color: #1976d2;
+  font-weight: 600;
+  text-transform: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.student-settings-form .MuiButton-containedPrimary:hover {
+  background-color: #125ea2;
+}
+
+
+
+
+/*=====Student Internship=====*/
+
+.internship-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #f3f9ff, #d6ecfa);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.internship-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+}
+
+.internship-container .intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.internship-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(25, 118, 210, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 6px solid #1976d2;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(25, 118, 210, 0.2);
+}
+
+.internship-card h3 {
+  color: #0d47a1;
+  margin-bottom: 0.25rem;
+}
+
+.internship-card h4 {
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+}
+
+.internship-card p {
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+
+.skills ul {
+  padding-left: 1.2rem;
+  color: #333;
+  margin-top: 0.25rem;
+}
+
+.apply-button {
+  margin-top: 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #125ea2;
+}
+
+/* Dialog overrides */
+.MuiDialogTitle-root {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+input[type="file"] {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #1976d2;
+}
+
+.MuiDialogContent-root {
+  padding-top: 1rem !important;
+}
+
+
+/*======PlacementPage.css======*/
+
+.placement-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  min-height: 100vh;
+}
+
+.placement-container h2 {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.company-card {
+  background: #ffffff;
+  border-left: 6px solid #1976d2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.company-card:hover {
+  transform: scale(1.02);
+}
+
+.company-card h3 {
+  color: #0d47a1;
+  margin-bottom: 0.3rem;
+}
+
+.company-card h4 {
+  color: #37474f;
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills ul li::before {
+  content: '✓';
+  color: #43a047;
+  margin-right: 6px;
+}
+
+.apply-button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #125ea2;
+}
+
+
+/*=======StudentApplication======*/
+
+.applications-container {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  min-height: 100vh;
+}
+
+.applications-container h2 {
+  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.applications-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.applications-table th,
+.applications-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.applications-table th {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.applications-table td {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.applications-table tr:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease;
+}
+
+
+/*=====Student Resume Builder======*/
+/* ResumeBuilder.css */
+
+.container {
+  padding: 2rem;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.step-indicator {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.form-step {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-step h3,
+.form-step h4 {
+  color: #0d47a1;
+}
+
+.form-step input,
+.form-step textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.button-group button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #125ea2;
+}
+
+#resume-content {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Chat Styles */
+.resume-chat-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.resume-chat-window {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+}
+
+.resume-chat-header {
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.resume-chat-body {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+  background-color: white;
+}
+
+.resume-chat-footer {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.resume-chat-footer textarea {
+  width: 100%;
+  resize: none;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.resume-chat-footer button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sidebar & Navbar Layout */
+.resume-layout {
+  display: flex;
+}
+
+.resume-sidebar {
+  width: 240px;
+  background-color: #0d47a1;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.resume-sidebar h3 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.resume-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-sidebar li {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.resume-sidebar li:hover {
+  color: #90caf9;
+}
+
+.resume-main {
+  margin-left: 240px;
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.resume-navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}

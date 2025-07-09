@@ -1,0 +1,79 @@
+/* .dashboard-container {
+  padding: 1rem;
+}
+
+.dashboard-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* Responsive adjustments */
+/* @media (max-width: 768px) {
+  .dashboard-container {
+    padding: 0.5rem;
+  }
+  
+  .dashboard-card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-card {
+    margin-bottom: 0.5rem;
+  }
+}  */
+/* Extra gradient panel styling */
+
+.dashboard-bg {
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.bg-header-gradient {
+  background: linear-gradient(90deg, #3a60c9, #00aeff);
+  border-radius: 1rem;
+  color: white;
+}
+
+.bg-panel {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.1);
+  border: none;
+}
+
+.dashboard-card {
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(11, 31, 58, 0.15);
+  border: 1px solid #00aeff;
+}
+
+.dashboard-card h6,
+.dashboard-card h4 {
+  color: #0b1f3a;
+}
+
+.dashboard-card .icon {
+  color: #3a60c9;
+}
+
+.btn-outline-primary {
+  border-color: #3a60c9;
+  color: #3a60c9;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3a60c9;
+  color: white;
+}
